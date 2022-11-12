@@ -80,21 +80,6 @@ a:hover {
     background: top no-repeat;
 }
 
-.bloc-bg-texture::before {
-    content: "";
-    background-size: 2px 2px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
-
 .b-parallax {
     background-attachment: fixed;
 }
@@ -651,7 +636,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000;
 }
 
 .container {
@@ -687,7 +672,7 @@ a {
 
 .cta-hero {
     margin-top: 22px;
-    color: #FFFFFF!important;
+    /* color: #FFFFFF!important; */
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
@@ -748,7 +733,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(165, 147, 99, 0.8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -765,17 +750,13 @@ h4 {
     background-color: #364577;
 }
 
-.bgc-atomic-tangerine {
-    background-color: #F3976C;
-}
-
 .tc-white {
-    color: #F3976C!important;
+    color: #f3976c!important;
 }
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000;
 }
 
 .btn-atomic-tangerine:hover {
@@ -813,11 +794,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -1052,11 +1033,8 @@ footer {
     display: flex;
     gap: 40px;
   }
-  footer .social-content .social-link {
-    color: #000;
-  }
   footer .social-content .social-link:hover {
-    color: rgb(219, 206, 200);
+    color: hsl(19deg, 85%, 15%);
   }
   footer .footer-content {
     display: flex;
@@ -1071,6 +1049,10 @@ footer {
   footer .footer-content a {
     font-size: 19px;
     color: hsla(0deg, 0%, 0%, 0.8);
+  }
+
+  footer .footer-content li {
+    margin: 10px;
   }
   
   @media all and (min-width: 767px) {
